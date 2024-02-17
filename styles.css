@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Livvic:wght@400;700&display=swap');
+
+:root{
+    --bg1 : rgb(0, 0, 0);
+    --bg2 : rgba(46, 46, 46, 0.4);
+    --c1 : rgb(236, 202, 12);
+    --c2 : rgb(88, 5, 148);
+}
+body{
+    font-family:'Livvic', Verdana, Geneva, Tahoma, sans-serif;
+    background-color: var(--bg1);
+    padding: 25px;
+}
+
+.main{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    height: 600px;
+    align-items: center;
+}
+@media only screen and (max-width : 1000px){
+    .main{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 80%;
+    height: 100%;
+    background-color: var(--bg1);
+    padding: 30px;
+}
+.time-display{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    padding: 30%;
+    font-size: 500%;
+    background-color: var(--bg2);
+    color: var(--c1);
+    height: 30%;
+    border-radius: 35px;
+    font-weight: bold;
+    align-items: center;
+    border: 3px solid white;
+}
+
+#hour{
+    color: var(--c2);
+}
+.icon{
+    color: white;
+}
+.options{
+    width: 100%;
+    height: 40%;
+    display: grid;
+    grid-template-columns: repeat(3 , 1fr);
+    justify-content: center;
+    margin-left: 7px;
+}
+button{
+    background-color: var(--c2);
+    color: white;
+    padding: 20px;
+    width: 90%;
+    height: 80px;
+    border-radius: 20px;
+    font-weight: bold;
+    border: none;
+    transition: 0.3s ease-in-out;
+    font-size: 16px;
+}
+button:hover{
+    background-color: var(--c1);
+    color: var(--bg1);
+    cursor: pointer;
+}
+
+#laps{
+    width: 50%;
+    background-color: var(--bg2);
+    border-radius: 36px;
+    padding: 20px;
+    height: 80%;
+    border: 3px solid white;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+.heading{
+    color: var(--c2);
+    font-size: 40px;
+    width: 100%;
+    font-weight: bold;
+    border-bottom: 2px solid rgb(95, 93, 93);
+}
+.lap{
+    padding: 10px;
+    color: rgb(95, 93, 93);
+    font-size: 30px;
+    font-weight: bold;
+    transition: 0.3s ease-in-out;
+}
+#lap:hover{
+    color: var(--c1);
+}
+.items{
+    overflow-y: scroll;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.items::-webkit-scrollbar{
+    display: none;
+}
+
+@media only screen and (max-width : 1000px){
+    .main{
+        overflow-y: scroll;
+    }
+    .time-display{
+        font-size: 180%;
+        padding-right: 40px;
+        padding: 30px;
+    }
+    .options{
+        width: 100%;
+        align-items: center;
+        gap: 3px;
+    }
+    button{
+        font-size: 12px;
+        padding: 7px;
+    }
+
+    #laps{
+        height: 500px;
+        width: 70%;
+        height: 150px;
+    }
+    .heading{
+        font-size: 18px;
+    }
+
+    .lap{
+        font-size: 20px;
+    }
+}
