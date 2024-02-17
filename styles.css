@@ -9,7 +9,7 @@
 body{
     font-family:'Livvic', Verdana, Geneva, Tahoma, sans-serif;
     background-color: var(--bg1);
-    padding: 25px;
+    padding: 5px;
 }
 
 .main{
@@ -25,6 +25,7 @@ body{
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        gap: 7px;
     }
 }
 
@@ -124,13 +125,10 @@ button:hover{
 }
 
 @media only screen and (max-width : 1000px){    
-    .main{
-        margin: -8px;
-    }
     .time-display{
         font-size: 180%;
-        padding-right: 40px;
-        padding: 30px;
+        padding: 20px;
+        width: 230px;
     }
     .options{
         width: 100%;
@@ -144,8 +142,9 @@ button:hover{
 
     #laps{
         height: 500px;
-        width: 70%;
         height: 150px;
+        padding: 20px;
+        width: 230px;
     }
     .heading{
         font-size: 18px;
