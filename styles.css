@@ -41,7 +41,7 @@ body{
     display: flex;
     justify-content: space-between;
     width: 80%;
-    padding: 30%;
+    padding: 10%;
     font-size: 500%;
     background-color: var(--bg2);
     color: var(--c1);
@@ -123,9 +123,9 @@ button:hover{
     display: none;
 }
 
-@media only screen and (max-width : 1000px){
+@media only screen and (max-width : 1000px){    
     .main{
-        overflow-y: scroll;
+        margin: -8px;
     }
     .time-display{
         font-size: 180%;
